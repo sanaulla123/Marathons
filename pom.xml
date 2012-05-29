@@ -89,17 +89,25 @@
         </exclusion>
       </exclusions>
     </dependency>
+    <!-- dependency>
+	<groupId>net.sourceforge.htmlcleaner</groupId>
+	<artifactId>htmlcleaner</artifactId>
+	<version>2.2</version>
+    </dependency -->
+    <!--  Gson: Java to Json conversion -->
     <dependency>
-		<groupId>net.sourceforge.htmlcleaner</groupId>
-		<artifactId>htmlcleaner</artifactId>
-		<version>2.2</version>
-	</dependency>
-    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.2.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <!-- dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-all</artifactId>
       <version>1.8.6</version>
-    </dependency>
+    </dependency-->
   </dependencies>
+
   <profiles>
     <profile>
      <!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->

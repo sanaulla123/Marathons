@@ -1,5 +1,6 @@
 package net.javabeat;
 
+import java.util.List;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.event.Event;
@@ -14,25 +15,25 @@ import org.zkoss.zul.ListitemRenderer;
 
 public class BorderLayoutComposer extends GenericForwardComposer{
 	
-	ListModelList menuModel = new ListModelList();
-	Listbox menuListbox;
+	ListModelList<MarathonEvent> eventsModel;
+	Listbox eventsListBox;
 	MenuNodeSelectListener listener = new MenuNodeSelectListener();
 	MenuNodeItemRenderer renderer = new MenuNodeItemRenderer();
 	Div contentDiv;
 	
-	
 	public BorderLayoutComposer(){
-		menuModel.add(new MenuNode("Function 1","BorderLayout_fn1.zul"));
-		menuModel.add(new MenuNode("Function 2","BorderLayout_fn2.zul"));
-		menuModel.add(new MenuNode("Function 3","BorderLayout_fn3.zul"));
+		String marathonEventScheduleSource = "http://runinfinity.com/calendar/india-marathon-calendar";
+		MarathonEventsSource marathonEventsSource = new MarathonEventsSource();
+		List<MarathonEvent> marathonEvents = marathonEventsSource.getMarathonEvents(); 
+		eventsModel = new ListModelList<MarathonEvent>(marathonEvents);
+		
 	}
 	
 	
 	public void doAfterCompose(Component comp) throws Exception {
 		super.doAfterCompose(comp);
-		menuListbox.setModel(menuModel);
-		menuListbox.setItemRenderer(renderer);
-		menuListbox.addEventListener(Events.ON_SELECT,listener);
+		eventsListBox.setModel(eventsModel);
+		
 	}
 
 	class MenuNode {
@@ -58,28 +59,23 @@ public class BorderLayoutComposer extends GenericForwardComposer{
 	
 	class MenuNodeItemRenderer implements ListitemRenderer{
 
-		public void render(Listitem item, Object data) throws Exception {
+		public void render(Listitem item, Object data, int index) throws Exception {
+			
 			MenuNode node = (MenuNode)data;
 			item.setImage("icon-24x24.png");
 			item.setLabel(node.getLabel());
 			item.setValue(node);
 		}
-
-		public void render(Listitem arg0, Object arg1, int arg2)
-				throws Exception {
-			// TODO Auto-generated method stub
-			
-		}
 	}
 	
 	class MenuNodeSelectListener implements EventListener{
 		public void onEvent(Event event) throws Exception {
-			Listitem item = menuListbox.getSelectedItem();
-			contentDiv.getChildren().clear();
-			if(item!=null){
-				MenuNode node = (MenuNode)item.getValue();
-				Executions.createComponents(node.getLink(),contentDiv,null);
-			}
+//			Listitem item = menuListbox.getSelectedItem();
+//			contentDiv.getChildren().clear();
+//			if(item!=null){
+//				MenuNode node = (MenuNode)item.getValue();
+//				Executions.createComponents(node.getLink(),contentDiv,null);
+//			}
 		}		
 	}
 	

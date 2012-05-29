@@ -1,10 +1,19 @@
 package net.javabeat;
 
+import com.google.gson.annotations.SerializedName;
+
 public class MarathonEvent {
 	
+	@SerializedName("even_url")
 	String url;
-	String title;
+	
+	String name;
 	String date;
-	String place;
+	String location;
+	
+	@Override
+	public String toString(){
+		return date+": "+name+" @ "+location;
+	}
 
 }

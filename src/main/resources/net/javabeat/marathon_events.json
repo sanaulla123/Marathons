@@ -1,0 +1,86 @@
+[
+	{
+		name: "R&L Himalayan Marathon",
+		location: "Sangla, Himachal Pradesh",
+		date: "Jun 28, 2012",
+		event_url: "http://runningandliving.com/HimalayanMarathon/"
+	},
+	{
+		name: "R&L Gurgaon Town and Country Half Marathon",
+		location: "Gurgaon, Haryana",
+		date: "Aug 5, 2012",
+		event_url: "http://runinfinity.com/race/gurgaon-town-and-country-half-marathon"
+	},
+	{
+		name: "Hyderabad Marathon",
+		location: "Hyderabad, Andhra Pradesh",
+		date: "Aug 26, 2012",
+		event_url: "http://runinfinity.com/race/hyderabad-marathon"
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	},
+	{
+		name: "",
+		location: "",
+		date: "",
+		event_url: ""
+	}
+]
