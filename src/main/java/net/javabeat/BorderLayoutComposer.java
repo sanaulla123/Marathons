@@ -1,6 +1,14 @@
 package net.javabeat;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.util.ArrayList;
 import java.util.List;
+
+import org.zkoss.gmaps.Gmaps;
+import org.zkoss.gmaps.Gmarker;
+import org.zkoss.gmaps.MapModel;
+import org.zkoss.gmaps.MapModelList;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.event.Event;
@@ -15,25 +23,28 @@ import org.zkoss.zul.ListitemRenderer;
 
 public class BorderLayoutComposer extends GenericForwardComposer{
 	
-	ListModelList<MarathonEvent> eventsModel;
-	Listbox eventsListBox;
+	//ListModelList<Gmarker> eventsModel;
+	MapModel mapModel;
+	//Listbox eventsListBox;
 	MenuNodeSelectListener listener = new MenuNodeSelectListener();
 	MenuNodeItemRenderer renderer = new MenuNodeItemRenderer();
+	Gmaps eventsMap;
 	Div contentDiv;
 	
-	public BorderLayoutComposer(){
+	public BorderLayoutComposer() throws MalformedURLException, IOException{
 		String marathonEventScheduleSource = "http://runinfinity.com/calendar/india-marathon-calendar";
 		MarathonEventsSource marathonEventsSource = new MarathonEventsSource();
-		List<MarathonEvent> marathonEvents = marathonEventsSource.getMarathonEvents(); 
-		eventsModel = new ListModelList<MarathonEvent>(marathonEvents);
+		List<Gmarker> marathonEvents = marathonEventsSource.getMarathonEvents();
+		
+		mapModel = new MapModelList(marathonEvents);
 		
 	}
 	
 	
 	public void doAfterCompose(Component comp) throws Exception {
-		super.doAfterCompose(comp);
-		eventsListBox.setModel(eventsModel);
-		
+		super.doAfterCompose(comp);		
+		eventsMap.setModel(mapModel);
+		eventsMap.setZoom(9);
 	}
 
 	class MenuNode {

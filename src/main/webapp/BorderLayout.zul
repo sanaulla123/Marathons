@@ -1,4 +1,6 @@
 <zk>
+	<script type="text/javascript" 
+	content="zk.googleAPIkey='ABQIAAAAmGxmYR57XDAbAumS9tV5fxQXyylOlR69a1vFTcUcpV6DXdesOBSMEHfkewcSzwEwBT7UzVx8ep8vjA'" />
 	<window id="main" width="100%" height="100%" apply="net.javabeat.BorderLayoutComposer">
 		<borderlayout>
 			<north size="70px">
@@ -8,12 +10,15 @@
 					]]></html>
 				</div>
 			</north>
-			<west size="200px" splittable="true" flex="true" collapsible="true" title="Marathon Events"> 
-				<listbox id="eventsListBox" style="border:none"/>	
-			</west>
 			<center flex="true">
 				<div id="contentDiv" >
-					
+					<gmaps id="eventsMap" width="100%" height="100%" showSmallCtrl="true">
+						 <attribute name="onMapClick"><![CDATA[
+				            org.zkoss.gmaps.Gmarker gmarker = event.getGmarker();
+				            if (gmarker != null)
+				                gmarker.setOpen(true);
+				         ]]></attribute>
+					</gmaps>
 				</div>
 			</center>
 			<south size="20px">

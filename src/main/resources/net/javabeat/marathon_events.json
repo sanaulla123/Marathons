@@ -18,69 +18,75 @@
 		event_url: "http://runinfinity.com/race/hyderabad-marathon"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "Kaveri Trail Marathon",
+		location: "Srirangapatna, Karnataka",
+		date: "Sep 16, 2012",
+		event_url: "http://runinfinity.com/race/kaveri-trail-marathon"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "R&L Shimla Half Marathon",
+		location: "Shimla, Himachal Pradesh",
+		date: "Sep 30, 2012",
+		event_url: "http://runningandliving.com/shimlahalfmarathon/"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "R&L Chittoor Half Marathon",
+		location: "Chittoor, Andhra Pradesh",
+		date: "Oct 6, 2012",
+		event_url: "http://runningandliving.com/"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "Airtel Delhi Half Marathon",
+		location: "New Delhi, Delhi",
+		date: "Oct 7, 2012",
+		event_url: "http://runinfinity.com/race/delhi-half-marathon"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "Celebration Mysore 1/2 Marathon and 10K",
+		location: "Mysore, Karnataka",
+		date: "Oct 7, 2012",
+		event_url: "http://runinfinity.com/race/celebration-mysore-half-marathon"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "Hyderabad Heritage Marathon",
+		location: "Hyderabad, Andhra Pradesh",
+		date: "Oct 14, 2012",
+		event_url: "http://runinfinity.com/race/hyderabad-heritage-marathon"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "R&L Jaipur Half Marathon",
+		location: "Jaipur, Rajasthan",
+		date: "Oct 21, 2012",
+		event_url: "http://runningandliving.com/"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "Bangalore Ultra",
+		location: "Bengaluru, Karnataka",
+		date: "Nov 11, 2012",
+		event_url: "http://runinfinity.com/race/bangalore-ultra"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "Navi Mumbai Barefoot Half Marathon",
+		location: "Navi Mumbai, Maharashtra",
+		date: "Nov 6, 2012",
+		event_url: "http://runinfinity.com/race/navi-mumbai-barefoot-half-marathon"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "Hyderabad 10K",
+		location: "Hyderabad, Andhra Pradesh",
+		date: "Nov 25, 2012",
+		event_url: "http://runinfinity.com/race/hyderabad-10k-run"
 	},
 	{
-		name: "",
-		location: "",
-		date: "",
-		event_url: ""
+		name: "Pune International Marathon",
+		location: "Pune, Maharashtra",
+		date: "Dec 2, 2012",
+		event_url: "http://runinfinity.com/race/pune-international-marathon"
+	},
+	{
+		name: "R&L Gurgaon Marathon",
+		location: "Haryana, Gurgaon",
+		date: "Dec 9, 2012",
+		event_url: "http://runinfinity.com/race/gurgaon-marathon"
 	}
 ]
