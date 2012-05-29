@@ -1,6 +1,6 @@
 <zk>
 	<script type="text/javascript" 
-	content="zk.googleAPIkey='ABQIAAAAmGxmYR57XDAbAumS9tV5fxQXyylOlR69a1vFTcUcpV6DXdesOBSMEHfkewcSzwEwBT7UzVx8ep8vjA'" />
+	content="zk.googleAPIkey='AIzaSyAgYZVjw15TQWGxAMFv0ayA8OlAtVFkyx0'" />
 	<window id="main" width="100%" height="100%" apply="net.javabeat.BorderLayoutComposer">
 		<borderlayout>
 			<north size="70px">

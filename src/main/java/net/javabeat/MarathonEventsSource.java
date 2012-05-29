@@ -56,11 +56,9 @@ public class MarathonEventsSource {
 		if ( resultsArray.size() > 0 ){
 			JsonObject geoInformation = resultsArray.get(0).getAsJsonObject();
 			String formattedAddress = geoInformation.get("formatted_address").getAsString();
-			System.out.println("Formatted Address: "+formattedAddress);
 			JsonObject locationJsonObj = geoInformation.get("geometry").getAsJsonObject().get("location").getAsJsonObject();
 			String latitude = locationJsonObj.get("lat").getAsString();
 			String longitude = locationJsonObj.get("lng").getAsString();
-			System.out.println("latitude : "+latitude+" longitude: "+ longitude);
 			geoLocation.latitude = Double.parseDouble(latitude);
 			geoLocation.longitude = Double.parseDouble(longitude);
 			geoLocation.name = formattedAddress;
