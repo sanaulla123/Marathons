@@ -1,7 +1,8 @@
+<?page title="Upcoming Marathon Events" ?>
 <zk>
 	<script type="text/javascript" 
 	content="zk.googleAPIkey='AIzaSyAgYZVjw15TQWGxAMFv0ayA8OlAtVFkyx0'" />
-	<window id="main" width="100%" height="100%" apply="net.javabeat.BorderLayoutComposer">
+	<window id="main" width="100%" height="100%" apply="net.javabeat.MarathonHomeComposer">
 		<borderlayout>
 			<north size="70px">
 				<div>
